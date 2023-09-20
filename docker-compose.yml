@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  admin_client:
+    image: nginx
+    container_name: pocketkey-qr-dynamic-admin_client
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - "8282:80"
